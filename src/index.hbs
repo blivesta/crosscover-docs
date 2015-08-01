@@ -1,0 +1,66 @@
+---
+title: Site Boilerplate
+description: Gulping Handlebars and JSON for GitHub Pages
+layout: home
+base_url: "./"
+---
+{{#extend "home"}}
+	{{#content "content"}}
+
+<div class="docs-Main Container Container--slim t-gutter">
+
+<h1 class="test">Installation</h1>
+
+<h2>Step 1: Link required files</h2>
+{{#markdown}}
+```
+<!-- animate.css -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.3.0/animate.min.css">
+<!-- crosscover.css -->
+<link rel="stylesheet" href="./dist/css/crosscover.min.css">
+
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+
+<!-- crosscover.js -->
+<script src="./dist/js/crosscover.min.js"></script>
+```
+{{/markdown}}
+
+
+<h2>Step 2: HTML markup</h2>
+{{#markdown}}
+```html
+<div class="crosscover">
+  <ul class="crosscover-list">
+    <li><img src="your-image-path.jpg" alt="image01"/></li>
+    <li><img src="your-image-path.jpg" alt="image02"/></li>
+  </ul>
+</div>
+```
+{{/markdown}}
+
+<h2>Step 3: Call the animsition</h2>
+{{#markdown}}
+```js
+$(".crosscover").crosscover({
+	animateInClass:'fade-in',
+	animateOutClass:'fade-out',
+	interval : 5000,
+	startIndex : 0,
+	autoPlay : true,
+	controles : true,
+	controlesClass  : 'crosscover-controls',
+	prevClass : 'crosscover-prev',
+	nextClass : 'crosscover-next',
+	playerClass : 'crosscover-player',
+	playerActiveClass : 'is-playing'
+});
+```
+{{/markdown}}
+
+
+</div>
+
+	{{/content}}
+{{/extend}}

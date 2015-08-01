@@ -1,0 +1,29 @@
+.docs-Island {
+  position: absolute;
+  z-index: 9999;
+  display: table;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+}
+
+.docs-Island-inner {
+  display: table-cell;
+  max-width: 600px;
+  padding-right: var(--g-gutter);
+  padding-left: var(--g-gutter);
+  text-align: center;
+  vertical-align: middle;
+}
+
+.docs-Island * {
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.docs-Island-inner h1 {
+  font-size: 12vw;
+  line-height: 0;
+  letter-spacing: -.05em;
+  text-transform: uppercase;
+}

@@ -1,0 +1,11 @@
+.docs-Footer {
+  margin-top:var(--g-space-gt);
+  padding-top:var(--g-space-xl);
+  padding-bottom:var(--g-space-xl);
+  background-color: var(--g-gray-5);
+}
+
+.docs-Footer * {
+  text-transform: uppercase;
+  color: #000;
+}

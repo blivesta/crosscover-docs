@@ -1,0 +1,37 @@
+<footer class="docs-Footer" role="contentinfo">
+  <div class="Container Container--slim t-gutter">
+
+    <h1>{{ site.title }}</h1>
+
+    {{#is file.meta.layout "home"}}
+      {{> include/social-buttons}}
+    {{/is}}
+
+
+    <h4>Other projects</h4>
+    <ul class="ListInline docs-Footer-list">
+      <li><a href="http://git.blivesta.com/animsition" target="_black">Animsition</a></li>
+      <li>·</li>
+      <li><a href="http://git.blivesta.com/drawer" target="_black">Drawer</a></li>
+      <li>·</li>
+      <li><a href="http://git.blivesta.com/chaffle" target="_black">Chaffle</a></li>
+      <li>·</li>
+      <li><a href="http://git.blivesta.com/conv" target="_black">Conv</a></li>
+      <li>·</li>
+      <li><a href="http://github.com/sircus" target="_black">Sircus</a></li>
+    </ul>
+
+    <ul class="ListInline docs-Footer-credit">
+      <li>Created by <span class="icon-blivesta icon-sm icon-circle"></span>&nbsp;
+      <a href="http://blivesta.com/" target="_blank">{{ site.author }}</a></li>
+      <li>Code licensed under the MIT.</li>
+    </ul>
+    <p>Photo by <a href="http://www.skyseeker.net/" target="_blank">skyseeker</a></p>
+
+  </div>
+
+</footer>
+<!-- Google analytics -->
+<script src="http://git.blivesta.com/js/ga.js"></script>
+
+<script src="{{file.meta.base_url}}js/{{pkg.name}}.js"></script>

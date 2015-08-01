@@ -1,0 +1,6 @@
+.docs-Main h1,
+.docs-Main h2 {
+  margin-top:var(--g-space-gt);
+  color:#000;
+  text-transform: uppercase;
+}
