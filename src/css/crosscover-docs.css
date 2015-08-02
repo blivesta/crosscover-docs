@@ -1,4 +1,5 @@
 @import "sircus";
+@import "animate.css/animate";
 @import "crosscover/dist/css/crosscover.css";
 @import "./island.css";
 @import "./main.css";
@@ -8,7 +9,7 @@
 @import "./carbon.css";
 
 .crosscover {
-  background-color:#000; 
+  background-color:#000;
 }
 
 :root {

@@ -10,8 +10,9 @@
     "url": "https://github.com/blivesta/crosscover-docs.git"
   },
   "dependencies": {
-    "jquery": ">= 1.7.0",
+    "animate.css":"^3.2.5",
     "crosscover": "git@github.com:blivesta/crosscover.git",
+    "jquery": ">= 1.7.0",
     "sircus": "^1.0.0-alpha.1"
   },
   "devDependencies": {
