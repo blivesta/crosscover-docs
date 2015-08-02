@@ -9,3 +9,8 @@
   text-transform: uppercase;
   color: #000;
 }
+
+.docs-Footer p,
+.docs-Footer li {
+  font-size: var(--g-fontSize-xs);
+}
