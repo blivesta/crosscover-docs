@@ -12,7 +12,9 @@ var Docs = (function() {
   }
 
   function crosscoverInit(instance) {
+  	var randomIndex = Math.floor(Math.random() * 4) * 1;
     $(".crosscover").crosscover({
+      startIndex: randomIndex,
       animateInClass:'fadeInDown',
       animateOutClass:'zoomOut'
     });
