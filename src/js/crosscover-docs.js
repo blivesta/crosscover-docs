@@ -1,15 +1,24 @@
 var $ = require('jquery');
+var imagesLoaded = require('imagesloaded');
 var crosscover = require('crosscover');
 
-(function() {
+var Docs = (function() {
 
+  var $crosscover = $('.crosscover');
+  var crosscoverLoad = imagesLoaded($crosscover);
+
+  function isInit() {
+    crosscoverLoad.on( 'always', crosscoverInit );
+  }
+
+  function crosscoverInit(instance) {
     $(".crosscover").crosscover({
       animateInClass:'fadeInDown',
-      animateOutClass:'zoomOut',
+      animateOutClass:'zoomOut'
     });
+  }
 
-    // $('.next').on('click', function(){
-    //   $('.crosscover').crosscover('toggle', $('.crosscover').children('.crosscover-list').children('li'), 'next');
-    // });
+  isInit();
 
+  return {};
 })();

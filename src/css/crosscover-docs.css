@@ -8,10 +8,6 @@
 @import "./highlight.css";
 @import "./carbon.css";
 
-.crosscover {
-  background-color:#000;
-}
-
 :root {
   --g-fontFamily-sansEn: "Avenir Next", "Helvetica Neue", sans-serif;
   --Button-color: rgba(255,255,255,.8);
