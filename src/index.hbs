@@ -1,15 +1,14 @@
 ---
-title: Site Boilerplate
-description: Gulping Handlebars and JSON for GitHub Pages
 layout: home
 base_url: "./"
+load_files: "bundle"
 ---
 {{#extend "home"}}
 	{{#content "content"}}
 
-<div class="docs-Main Container Container--slim t-gutter">
+	<div class="docs-Main Container Container--slim t-gutter">
 
-<h1 class="test">Installation</h1>
+<h1>Installation</h1>
 
 <h2>Step 1: Link required files</h2>
 {{#markdown}}
@@ -32,11 +31,23 @@ base_url: "./"
 {{#markdown}}
 ```html
 <div class="crosscover">
+
+  <div class="crosscover-overlay">
+    <div class="crosscover-island">
+      <h1 class="crosscover-title">...</h1>
+      <h2 class="crosscover-description">...</h2>
+    </div>
+  </div>
+
   <ul class="crosscover-list">
-    <li><img src="your-image-path.jpg" alt="image01"/></li>
-    <li><img src="your-image-path.jpg" alt="image02"/></li>
+    <li><img src="{{file.meta.base_url}}images/01.jpg" alt="image01"/></li>
+    <li><img src="{{file.meta.base_url}}images/02.jpg" alt="image02"/></li>
+    <li><img src="{{file.meta.base_url}}images/03.jpg" alt="image03"/></li>
+    <li><img src="{{file.meta.base_url}}images/04.jpg" alt="image04"/></li>
+    <li><img src="{{file.meta.base_url}}images/05.jpg" alt="image05"/></li>
   </ul>
 </div>
+
 ```
 {{/markdown}}
 
@@ -44,23 +55,25 @@ base_url: "./"
 {{#markdown}}
 ```js
 $(".crosscover").crosscover({
-	animateInClass:'fade-in',
-	animateOutClass:'fade-out',
+  animateInClass:'fade-in',
+  animateOutClass:'fade-out',
 	interval : 5000,
 	startIndex : 0,
-	autoPlay : true,
-	controles : true,
-	controlesClass  : 'crosscover-controls',
+  autoPlay : true,
+	controller : true,
+	controllerClass  : 'crosscover-controller',
 	prevClass : 'crosscover-prev',
 	nextClass : 'crosscover-next',
 	playerClass : 'crosscover-player',
-	playerActiveClass : 'is-playing'
+	playerActiveClass : 'is-playing',
+  playerInnerHtml : '<span class="crosscover-icon-player"></span>',
+  prevInnerHtml : '<span class="crosscover-icon-prev"></span>',
+  nextInnerHtml : '<span class="crosscover-icon-next"></span>'
 });
 ```
 {{/markdown}}
 
-
-</div>
+	</div>
 
 	{{/content}}
 {{/extend}}
