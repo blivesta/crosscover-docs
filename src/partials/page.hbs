@@ -1,8 +1,28 @@
 {{> include/head}}
 
-<body>
+<body class="docs-Pages">
 
 {{> include/crosscover}}
+
+
+<section class="docs-Main Container Container--slim t-gutter">
+
+	<h1 class="t-mbSm">
+		<small>in:</small>&nbsp;{{file.meta.in_class}} ~ <small>out:</small>&nbsp;{{file.meta.out_class}}</h1>
+		<h3>Options</h3>
+{{#markdown}}
+``` js
+$('.crosscover').crosscover({
+  animateInClass:'{{file.meta.in_class}}',
+  animateOutClass:'{{file.meta.out_class}}'
+});
+```
+{{/markdown}}
+</section>
+
+<section class="docs-Main Container Container--slim t-gutter">
+	{{> include/demo-link}}
+</section>
 
 {{{block "content"}}}
 
