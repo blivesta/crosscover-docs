@@ -15,8 +15,8 @@ var Docs = (function() {
   	var randomIndex = Math.floor(Math.random() * 4) * 1;
     $(".crosscover").crosscover({
       startIndex: randomIndex,
-      animateInClass:'fadeInDown',
-      animateOutClass:'zoomOut'
+      animateInClass:'zoomInUp',
+      animateOutClass:'zoomOutUp'
     });
   }
 

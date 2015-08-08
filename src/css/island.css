@@ -14,6 +14,13 @@
   letter-spacing: -.05em;
   text-transform: uppercase;
 }
+.docs-Island-title a {
+  text-decoration: none;
+}
+.docs-Island-title a:hover {
+  color:rgba(255,255,255,.5)
+}
+
 .docs-Island-description {
   font-size: 1rem;
   margin-bottom: 2rem;
