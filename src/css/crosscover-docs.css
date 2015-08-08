@@ -1,9 +1,9 @@
 @import "sircus";
 @import "animate.css/animate";
 @import "crosscover/dist/css/crosscover.css";
+@import "./pages.css";
 @import "./island.css";
 @import "./main.css";
-@import "./pages.css";
 @import "./footer.css";
 @import "./icon.css";
 @import "./highlight.css";
