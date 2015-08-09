@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "animate.css":"^3.2.5",
-    "crosscover": "*",
+    "crosscover": "^0.3.1",
     "imagesloaded":"^3.1.8",
     "jquery": ">= 1.7.0",
     "sircus": "^1.0.0-alpha.2"
