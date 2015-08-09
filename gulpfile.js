@@ -168,6 +168,14 @@ gulp.task('images', function() {
 
 // ----------------------------------------------------------------
 
+gulp.task('copy', function() {
+  return gulp
+    .src(['./src/js/crosscover*.js'])
+    .pipe(gulp.dest('./gh-pages/js'));
+});
+
+// ----------------------------------------------------------------
+
 gulp.task('serve', function() {
   browserSync.init({
     server: {
@@ -212,6 +220,15 @@ gulp.task('ghpages', function() {
     }));
 });
 
+gulp.task('ghpages-staging', function() {
+  return gulp
+    .src('./gh-pages/**/*')
+    .pipe(ghpages({
+      remoteUrl: 'git@github.com:blivesta/staging.git',
+      branch: 'gh-pages'
+    }));
+});
+
 // ----------------------------------------------------------------
 
 gulp.task('minify', ['cssmin', 'jsmin', 'htmlmin']);
@@ -230,6 +247,7 @@ gulp.task('default', ['build'], function(cb) {
 
 gulp.task('build', ['cleanup'], function(cb) {
   runSequence(
+    ['copy'],
     'js', 'css', 'html', 'images',
     ['sitemap', 'jshint', 'htmlhint'],
     cb
@@ -242,6 +260,16 @@ gulp.task('deploy', ['build'], function(cb) {
   runSequence(
     ['minify'],
     'ghpages',
+    ['pagespeed'],
+    cb
+  );
+});
+
+
+gulp.task('staging', ['build'], function(cb) {
+  runSequence(
+    ['minify'],
+    'ghpages-staging',
     ['pagespeed'],
     cb
   );
