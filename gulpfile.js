@@ -57,7 +57,7 @@ gulp.task('html', function() {
         pkg: pkg,
         site: yaml.safeLoad(fs.readFileSync('./site.yml', 'utf8'))
       },
-      helpers: './helpers.js',
+      helpers: './node_modules/site-boilerplate-helpers/index.js',
       partials: './src/partials/**/*.hbs'
     }))
     .pipe(rename(function(path) {
