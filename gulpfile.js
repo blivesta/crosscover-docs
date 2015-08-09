@@ -170,7 +170,7 @@ gulp.task('images', function() {
 
 gulp.task('copy', function() {
   return gulp
-    .src(['./src/js/crosscover*.js'])
+    .src('./node_modules/crosscover/dist/js/crosscover.min.js')
     .pipe(gulp.dest('./gh-pages/js'));
 });
 
@@ -247,8 +247,7 @@ gulp.task('default', ['build'], function(cb) {
 
 gulp.task('build', ['cleanup'], function(cb) {
   runSequence(
-    ['copy'],
-    'js', 'css', 'html', 'images',
+    'js', 'css', 'html', 'images', 'copy',
     ['sitemap', 'jshint', 'htmlhint'],
     cb
   );
