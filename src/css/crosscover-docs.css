@@ -1,6 +1,7 @@
 @import "sircus";
 @import "animate.css/animate";
 @import "crosscover/dist/css/crosscover.css";
+@import "./base.css";
 @import "./pages.css";
 @import "./island.css";
 @import "./main.css";
