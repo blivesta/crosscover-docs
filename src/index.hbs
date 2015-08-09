@@ -6,14 +6,33 @@ load_files: "bundle"
 {{#extend "home"}}
 	{{#content "content"}}
 
-		<div class="docs-Main Container Container--slim t-gutter">
+<div class="docs-Main Container Container--slim t-gutter">
+
 <h1>Installation</h1>
 
 <h2>Step 1: Link required files</h2>
-<p>
-  <a href="https://daneden.github.io/animate.css/" target="_blank">animate.css</a>&nbsp;
-  <small>Create by <a href="//daneden.me">Daniel Eden</a>.</small>
-</p>
+<ol>
+	<li>
+	  <a href="https://github.com/jquery/jquery" target="_blank">jQuery</a>
+		&nbsp;
+	  <small>
+			Created by <a href="https://github.com/jquery/jquery/blob/master/AUTHORS.txt" target="_blank">jQuery Foundation and other contributors</a>.
+		</small>
+	</li>
+	<li>
+	  <a href="https://daneden.github.io/animate.css/" target="_blank">animate.css</a>&nbsp;
+	  <small>
+			Create by <a href="//daneden.me" target="_blank">Daniel Eden</a>.
+		</small>
+	</li>
+	<li>
+	  <a href="https://github.com/blivesta/crosscover" target="_blank">crosscover</a>&nbsp;
+	  <small>
+			Created by <a href="//blivesta.com" target="_blank">blivesta</a>&nbsp;&&nbsp;
+			<a href="https://github.com/ungki">Ungki</a>.
+		</small>
+	</li>
+</ol>
 
 {{#markdown}}
 ``` html
@@ -75,7 +94,26 @@ $(".crosscover").crosscover({
 });
 ```
 {{/markdown}}
-		</div>
+
+
+<h1>Browser support</h1>
+<p>Requires a browser that supports CSS3.</p>
+<ul class="ListInline">
+	<li>
+		<mark>IE10+</mark>
+	</li>
+	<li>
+		<mark>Safari</mark>
+	</li>
+	<li>
+		<mark>Chrome</mark>
+	</li>
+	<li>
+		<mark>Firefox</mark>
+	</li>
+</ul>
+
+</div><!-- /.docs-Main -->
 
 		<div class="docs-Main Container Container--slim t-gutter">
 			{{> include/demo-link}}
