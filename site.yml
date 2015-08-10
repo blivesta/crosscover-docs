@@ -1,8 +1,10 @@
 title: Crosscover
+pkg_name: crosscover
+url: http://git.blivesta.com/crosscover/
 description: Carousel of a simple background image using jquery and animate.css.
-tags: jquery, slider, background image
+tags: jquery, css, animation, slider
 author: blivesta
-author_url: https://blivesta.com/
-github_url: https://github.com/blivesta
+author_url: http://blivesta.com/
+maintainer: ungki
+maintainer_url: https://github.com/ungki
 copyright: Copyright (c) 2013-2015 blivesta. all rights reserved.
-git_star_btn: http://ghbtns.com/github-btn.html?user=blivesta&amp;repo=crosscover&amp;type=watch&amp;count=true
