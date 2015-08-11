@@ -4,7 +4,11 @@ base_url: "./"
 load_files: "bundle"
 ---
 {{#extend "home"}}
-	{{#content "content"}}
+{{#content "content"}}
+
+<div class="docs-Main Container Container--slim t-gutter">
+	{{> include/demo-link}}
+</div>
 
 <div class="docs-Main Container Container--slim t-gutter">
 
@@ -110,10 +114,6 @@ $(".crosscover").crosscover({
 </ul>
 
 </div><!-- /.docs-Main -->
-
-		<div class="docs-Main Container Container--slim t-gutter">
-			{{> include/demo-link}}
-		</div>
 
 	{{/content}}
 {{/extend}}
