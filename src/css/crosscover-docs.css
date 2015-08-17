@@ -11,7 +11,15 @@
 @import "./carbon.css";
 
 :root {
+  --g-primary: rgba(0, 0, 0, 1);
   --g-fontFamily-sansEn: "Avenir Next", "Helvetica Neue", sans-serif;
+
+  --link-color: rgba(0, 0, 0, 1);
+  --link-color-hover: rgba(0, 0, 0, .6);
+
+  --heading-color:rgba(0, 0, 0, 1);
+
   --Button-color: rgba(255,255,255,.8);
   --Button-borderColor: rgba(255,255,255,.8);
+  --Button-primary-borderColor: #000;
 }
