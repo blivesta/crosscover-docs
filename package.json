@@ -9,6 +9,10 @@
     "type": "git",
     "url": "https://github.com/blivesta/crosscover-docs.git"
   },
+  "scripts": {
+    "setup": "npm i && gulp build",
+    "build": "gulp build"
+  },
   "dependencies": {
     "animate.css":"^3.2.5",
     "crosscover": "^0.5.0",
