@@ -53,8 +53,8 @@ var Docs = (function() {
     $(".crosscover").imagesLoaded( function() {
       $(".crosscover").crosscover({
 	      startIndex: randomIndex,
-        animateInClass:'{{file.meta.in_class}}',
-        animateOutClass:'{{file.meta.out_class}}'
+        inClass:'{{file.meta.in_class}}',
+        outClass:'{{file.meta.out_class}}'
       });
     });
   }

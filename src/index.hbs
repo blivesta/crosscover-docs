@@ -82,42 +82,50 @@ bower install crosscover
 ```html
 <div class="crosscover">
 
-  <div class="crosscover-overlay">
-    <div class="crosscover-island">
-      <h1 class="crosscover-title">...</h1>
-      <h2 class="crosscover-description">...</h2>
-    </div>
+	<!-- Overlay
+	<div class="crosscover-overlay">
+		<div class="crosscover-island">
+			<h1 class="crosscover-title">...</h1>
+			<h2 class="crosscover-description">...</h2>
+		</div>
+	</div>
+	-->
+
+  <div class="crosscover-list">
+    <a class="crosscover-item" href="http://blivesta.com">
+			<img src="{{file.meta.base_url}}images/01.jpg" alt="image01"/>
+		</a>
+    <div class="crosscover-item">
+			<img src="{{file.meta.base_url}}images/02.jpg" alt="image02"/>
+		</div>
+    <div class="crosscover-item">
+			<img src="{{file.meta.base_url}}images/03.jpg" alt="image03"/>
+		</div>
   </div>
 
-  <ul class="crosscover-list">
-    <li><img src="{{file.meta.base_url}}images/01.jpg" alt="image01"/></li>
-    <li><img src="{{file.meta.base_url}}images/02.jpg" alt="image02"/></li>
-    <li><img src="{{file.meta.base_url}}images/03.jpg" alt="image03"/></li>
-    <li><img src="{{file.meta.base_url}}images/04.jpg" alt="image04"/></li>
-    <li><img src="{{file.meta.base_url}}images/05.jpg" alt="image05"/></li>
-  </ul>
 </div>
 ```
 {{/markdown}}
+
 
 <h2>Step 3: Call the Crosscover</h2>
 {{#markdown}}
 ```js
 $(".crosscover").crosscover({
-	animateInClass:'fade-in',
-	animateOutClass:'fade-out',
-	interval : 5000,
-	startIndex : 0,
-	autoPlay : true,
-	controller : true,
-	controllerClass  : 'crosscover-controller',
-	prevClass : 'crosscover-prev',
-	nextClass : 'crosscover-next',
-	playerClass : 'crosscover-player',
-	playerActiveClass : 'is-playing',
-	playerInnerHtml : '<span class="crosscover-icon-player"></span>',
-	prevInnerHtml : '<span class="crosscover-icon-prev"></span>',
-	nextInnerHtml : '<span class="crosscover-icon-next"></span>'
+	inClass: 'fade-in',
+	outClass: 'fade-out',
+	interval: 5000,
+	startIndex: 0,
+	autoPlay: true,
+	dotsNav: true,
+	controller: false,
+	controllerClass: 'crosscover-controller',
+	prevClass: 'crosscover-prev',
+	nextClass: 'crosscover-next',
+	playerClass: 'crosscover-player',
+	playerInnerHtml: '<span class="crosscover-icon-player"></span>',
+	prevInnerHtml: '<span class="crosscover-icon-prev"></span>',
+	nextInnerHtml: '<span class="crosscover-icon-next"></span>'
 });
 ```
 {{/markdown}}
