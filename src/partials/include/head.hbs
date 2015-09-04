@@ -3,7 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@blivesta" />
+  <meta name="twitter:title" content="{{site.title}}" />
+  <meta name="twitter:description" content="{{site.description}}" />
+  <meta name="twitter:image" content="{{file.meta.base_url}}images/touch-icon.png" />
+
   {{#is file.meta.layout "home"}}
   <meta name="description" content="{{site.description}}">
   <title>{{site.title}}</title>
@@ -12,11 +19,11 @@
   <title>{{file.meta.demo}} - {{site.title}}</title>
   {{/is}}
 
-    <!-- Icon -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="//blivesta.com/ico/touch-icon-144.png">
-    <link rel="shortcut icon" href="//blivesta.com/ico/favicon.ico">
+  <!-- Icon -->
+  <link rel="apple-touch-icon" href="{{file.meta.base_url}}images/touch-icon.png">
+  <link rel="shortcut icon" href="//blivesta.com/ico/favicon.ico">
 
-    <!-- Docs css -->
-    <link rel="stylesheet" href="{{file.meta.base_url}}css/{{pkg.name}}.css">
+  <!-- Docs css -->
+  <link rel="stylesheet" href="{{file.meta.base_url}}css/{{pkg.name}}.css">
 
   </head>
