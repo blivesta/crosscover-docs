@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "animate.css":"^3.2.5",
-    "crosscover": "git://github.com/blivesta/crosscover.git#8db89f7",
+    "crosscover": "git://github.com/blivesta/crosscover.git#9248efe",
     "imagesloaded":"^3.1.8",
     "jquery": ">= 1.7.0",
     "sircus": "^1.0.0-alpha.2"
